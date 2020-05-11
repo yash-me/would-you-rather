@@ -8,7 +8,7 @@ import HomeP from './HomeP';
 import QuestionP from './QuestionP';
 import AddQuestionP from './AddQuestionP';
 import LoginP from './LoginP';
-import LeaderboardP from './LeaderboardP';
+import LeaderBoardP from './LeaderBoardP';
 
 class App extends Component {
   componentDidMount () {
@@ -25,7 +25,7 @@ class App extends Component {
                 <TopNav />
                 <Route path='/' exact component={HomeP} />
                 <Route path='/add' component={AddQuestionP} />
-                <Route path='/leaderboard' component={LeaderboardP} />
+                <Route path='/leaderboard' component={LeaderBoardP} />
                 <Route path='/questions/:id' component={QuestionP} />
               </div>
             : <LoginP />
